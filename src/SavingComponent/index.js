@@ -10,7 +10,7 @@ const SavingComponent = ({ saving, getIsClean, theme }) => {
         {!saved && 'Saving...'}
         {saved && 'All Changes Saved.'}
       </span>
-      <span>{'🖫'}</span>
+      <span style={{ marginLeft: '0.2em' }}>{'🖫'}</span>
     </div>
   );
 };
