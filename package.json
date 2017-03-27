@@ -1,5 +1,5 @@
 {
-  "name": "draft-js-autosave-plugin",
+  "name": "@synocate/draft-js-autosave-plugin",
   "version": "0.0.1",
   "description": "Autosave Plugin for DraftJS Plugins Editor",
   "author": {
