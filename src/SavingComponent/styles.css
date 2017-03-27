@@ -11,6 +11,7 @@
 
 .saving {
   visibility: visible;
+  flex-grow: 1;
 }
 
 .saved {
