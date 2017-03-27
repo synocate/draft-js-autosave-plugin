@@ -1,6 +1,6 @@
 {
   "name": "draft-js-autosave-plugin",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Autosave Plugin for DraftJS Plugins Editor",
   "author": {
     "name": "Conner Jevning",
