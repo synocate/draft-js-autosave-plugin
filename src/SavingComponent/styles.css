@@ -1,18 +1,17 @@
 .container {
-  color: 'orange';
-  display: 'flex';
+  color: grey;
+  display: inline-flex;
 }
 
 .containerSaving {
-  color: 'black';
+  color: black;
 }
 
 .saving {
-  margin: '0 0.2em';
+  visibility: visible;
 }
 
 .saved {
-  color: green;
   visibility: hidden;
   opacity: 0;
   transition: visibility 0s 2s, opacity 2s linear;
