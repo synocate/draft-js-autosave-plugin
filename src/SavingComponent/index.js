@@ -5,7 +5,7 @@ const SavingComponent = ({ saving, getIsClean, theme }) => {
   return (
     <div className={saved ? theme.container : `${theme.container} ${theme.containerSaving}`}>
       <span
-        className={saved ? theme.saved : theme.saving}
+        className={saved ? theme.textSaved : theme.textSaving}
       >
         {!saved && 'Saving...'}
         {saved && 'All Changes Saved.'}

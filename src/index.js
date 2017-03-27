@@ -10,9 +10,6 @@ export const defaultTheme = {
   // Inline style object for saving icon, base and saving
   saved: saveStyles.saved,
   saving: saveStyles.saving,
-  // Inline style object for saving message, base and saving
-  message: saveStyles.message,
-  messageSaving: saveStyles.messageSaving,
 };
 
 export default (config = {}) => {

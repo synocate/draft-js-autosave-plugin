@@ -9,12 +9,12 @@
   color: black;
 }
 
-.saving {
+.textSaving {
   visibility: visible;
   flex-grow: 1;
 }
 
-.saved {
+.textSaved {
   visibility: hidden;
   opacity: 0;
   transition: visibility 0s 2s, opacity 2s linear;
