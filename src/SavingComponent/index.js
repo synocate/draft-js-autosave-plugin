@@ -3,7 +3,7 @@ import React, { PropTypes } from 'react';
 const SavingComponent = ({ saving, getIsClean, theme }) => {
   const saved = getIsClean() && !saving;
   return (
-    <div className={saved ? theme.container : theme.containerSaving}>
+    <div className={saved ? theme.container : `${theme.container} ${theme.containerSaving}`}>
       <span
         className={saved ? theme.saved : theme.saving}
       >
