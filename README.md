@@ -153,3 +153,8 @@ This plugin is built for `draft-js-plugins-editor` version `2.0.0-beta10` and sh
 ## License
 
 MIT
+
+## TODO
+
+- [ ] Remove extraneous packages from package.json
+- [ ] Add testing
