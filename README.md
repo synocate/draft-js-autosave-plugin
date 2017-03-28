@@ -45,8 +45,8 @@ The config options and their defaults are:
 | Option | Type | Description | Default | Required |
 | --- | --- | --- | --- | --- |
 | `saveFunction` | `Function` | Required callback function that will be called upon a save event | `none` | `*`
-| `debounceTime` | `integer` | Time, in milliseconds, to [`debounce`](https://css-tricks.com/the-difference-between-throttling-and-debouncing/) the firing of save events between changes | 2000 | 
-| `saveAlways` | `Boolean` | Whether or not to call saveFunction callback for both selection and content changes, rather than just content (DraftJS fires onChange events for both) | `false` |
+| `debounceTime` | `integer` | Time, in milliseconds, to [`debounce`](https://css-tricks.com/the-difference-between-throttling-and-debouncing/) the firing of save events after changes | 2000 | 
+| `saveAlways` | `Boolean` | Whether or not to call saveFunction callback for both selection and content changes, rather than just content changes (DraftJS fires onChange events for both) | `false` |
 | `savingComponent` | `React Component` | A custom react component to display the saving status; will receive props from plugin | [SavingComponent](https://github.com/synocate/draft-js-autosave-plugin/blob/master/src/SavingComponent/index.js) |
 
 ## Component
@@ -71,7 +71,7 @@ The component has a couple optional props:
 
 | Prop | Type | Description | Default |
 | --- | --- | --- | --- |
-| `saving` | `Boolean` | If you're using an asynchronous saving function, the component needs to be made aware of the in-flight status to render saving status appropriately (otherwise it will be considered `saved` upon calling the saveFunction callback) | `none`
+| `saving` | `Boolean` | If you're using an asynchronous saving function, the component needs to be made aware of the in-flight request to render saving status appropriately (otherwise it will be considered `saved` upon calling the saveFunction callback) | `none`
 | `theme` | `object` | Object of css classNames that will be applied to the saving component. Default theming classes are replaced entirely (see [here](https://github.com/synocate/draft-js-autosave-plugin/blob/master/src/index.js#L48) for more details) if property provided. | [styles.css](https://github.com/synocate/draft-js-autosave-plugin/blob/master/src/SavingComponent/styles.css) | 
 
 
@@ -148,7 +148,7 @@ const autosavePlugin = createAutosavePlugin({ ...config, savingComponent: MySavi
 
 ## draft-js-plugins-editor version info
 
-This plugin is built for `draft-js-plugins-editor` version `2.0.0-beta10` and should be considered to be in beta until draft-js-plugins-editor and this plugin reach a full `2.0.0` release
+This plugin is built for `draft-js-plugins-editor` version `2.0.0-beta10` and should be considered to be in beta until draft-js-plugins-editor and/or this plugin reach a full `2.0.0` release
 
 ## License
 

@@ -17,7 +17,7 @@ const SavingComponent = ({ saving, getIsClean, theme }) => {
 
 SavingComponent.propTypes = {
   getIsClean: PropTypes.func.isRequired,
-  saving: PropTypes.bool.isRequired,
+  saving: PropTypes.bool,
   theme: PropTypes.object.isRequired,
 };
 

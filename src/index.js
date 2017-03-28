@@ -12,7 +12,7 @@ export const defaultTheme = {
   saving: saveStyles.saving,
 };
 
-export default (config = {}) => {
+export default (config) => {
   let _editorState;
   let _debounce;
   let _clean = true;
@@ -55,5 +55,6 @@ export default (config = {}) => {
   return {
     SavingComponent: decorateComponentWithProps(savingComponent, { theme, getIsClean: _getIsClean }),
     onChange,
+    _getIsClean,
   };
 };

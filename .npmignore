@@ -13,3 +13,7 @@ CHANGELOG.md
 
 # NPM debug
 npm-debug.log
+
+# test related
+coverage/
+.nyc_output/
